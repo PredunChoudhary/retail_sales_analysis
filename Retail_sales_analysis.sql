@@ -1,5 +1,8 @@
+-- Creating datebase :-
+
 Create database SQL_PROJECT_P1;
 Drop table if exists retail_sales;
+
 Create table retail_sales
 				(
 				transactions_id INT PRIMARY KEY,
@@ -42,8 +45,7 @@ or
 total_sale is null
 ;
 
--- Deleting null values. 
-
+--Deleting null values. 
 
 delete FROM retail_sales
 where transactions_id is null
